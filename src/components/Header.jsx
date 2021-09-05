@@ -51,7 +51,7 @@ const Logo = styled.img`
 const NavMenu = styled.div`
     display: flex;
     flex: 1;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-left: 25px;
     margin-right: 25px;
     a{
@@ -67,12 +67,33 @@ const NavMenu = styled.div`
         span{
             font-size: 13px;
             lettter-spacing: 1.42px;
+            position: relative;
+
+            &:after{
+                content: "";
+                height: 2px;
+                background: white;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -6px;
+                opacity: 0;
+                transform: scaleX(0);
+            }
+        }
+
+        &:hover{
+            span:after{
+                opacity: 1;
+                transform-origin: left center;
+                transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+                transform: scaleX(1);
+            }
         }
     }
 `
 
 const UserImage = styled.img`
-    border: 3px solid yellow;
     width: 48px;
     height: 48px;
     border-radius: 50%;
