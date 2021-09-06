@@ -1,14 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import ImageSlider from './ImageSlider';
+import Movies from './Movies';
 import Viewers from './Viewers';
 
 export default function Home() {
     return (
         <Container>
-            Home
             <ImageSlider />
             <Viewers />
+            <Movies />
         </Container>
     )
 }
