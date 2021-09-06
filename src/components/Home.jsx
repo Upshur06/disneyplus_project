@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import ImageSlider from '../ImageSlider';
 
 export default function Home() {
     return (
         <Container>
             Home
+            <ImageSlider />
         </Container>
     )
 }
