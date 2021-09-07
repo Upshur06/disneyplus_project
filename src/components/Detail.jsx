@@ -28,6 +28,13 @@ export default function Detail() {
                     <img src='/images/group-icon.png' alt='' />
                 </GroupWatchBtn>
             </Controls>
+
+            <Subtitle>
+                1914 translation by H. Rackham
+            </Subtitle>
+            <Description>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+            </Description>
         </Container>
     )
 }
@@ -88,7 +95,7 @@ const PlayBtn = styled.button`
     &:hover{
         background-color: rgb(198, 198, 198);
     }
-    `
+`
     
     const TrailerBtn = styled(PlayBtn)`
         background: rgba(0, 0, 0, 0.3);
@@ -116,4 +123,19 @@ const AddBtn = styled.button`
 
 const GroupWatchBtn = styled(AddBtn)`
     background: rgb(0, 0, 0);
+    cursor: pointer;
+`
+
+const Subtitle = styled.div`
+    color: rgb(249, 249, 249);
+    font-size: 15px;
+    min-height: 20px;
+    margin-top: 26px;
+`
+
+const Description = styled.div`
+    line-height: 1.4;
+    font-size: 20px;
+    margin-top: 16px;
+    color: rgb(249, 249, 249);
 `
